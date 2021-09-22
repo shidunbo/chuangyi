@@ -1,0 +1,22 @@
+
+.theory-content-layout > ul > li >a{
+    display: inline-block;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    border-bottom: solid 3px transparent;
+}
+.theory-content-layout > ul > li > a:hover{
+    color: rgb(203,50,50);
+    border-bottom: solid 3px rgb(203,50,50);
+}
+.theory-content-layout > ul > li{
+    margin: 9px 0;
+}
+.theory-content-layout > ul{
+    margin-bottom: 40px;
+}
+.theory-content-layout > ul > li > a > span{
+    cursor: pointer;
+}

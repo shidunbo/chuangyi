@@ -1,0 +1,97 @@
+/* 全局设置 */
+@font-face{
+    font-family: email-font;
+    src: url("../css/font/rs.ttf");
+}
+html,body{
+    min-height: 100vh;
+}
+
+#metting-bg-body{
+    background: linear-gradient(to top right,rgba(59, 59, 59,0.9),rgba(197,197,197,0.1))
+    ,url("../images/15.jpg") no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+#narrator{
+    font-family: email-font;
+    font-size: 20px;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    position: absolute;
+    margin: 30px 0 0 0;
+    width: 130px;
+    height: 450px;
+    cursor: default;
+}
+/* 内容部分第一部分 */
+.metting-content-first > .metting-content-body{
+    font-family: email-font;
+    position: relative;
+    background-color: white;
+}
+.email-paper{
+    box-shadow: 0 0 5px 1px rgb(99,99,99);
+    margin: 0 0 40px 0;
+    padding: 25px;
+}
+.email-paper > h1{
+    border: 0;
+    color: rgb(166,166,166);
+    font-family: email-font;
+    border-bottom: solid 1px black;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 20px;
+}
+.email-content{
+    padding: 20px;
+    font-family: email-font;
+    color: rgb(138, 138, 138);
+    font-size: 19px;
+    text-decoration: underline;
+    cursor: default;
+}
+.email-content > div{
+    width: 380px;
+    height: 253px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+    clear: both;
+    margin: 0 0 13.5px 30px;
+}
+.email-paper > div > div > img{
+    width: 380px;
+    height: 253px;
+    transition: all 1s;
+}
+.email-paper > div > div > img:hover{
+    transform: scale(1.2);
+}
+.email-paperclip{
+    position: absolute;
+    top: -25px;
+    left: -15px;
+}
+.email-content >span{
+    font-family: email-font;
+    font-size: 26px;
+}
+.email-content-two > div{
+    float: left;
+    margin: 0 30px 15px 0;
+}
+.email-seal{
+    position: absolute;
+    top: 280px;
+    right: 430px;
+    transform: rotate(45deg);
+}
+.email-stamp{
+    position: absolute;
+    right: 80px;
+    top: 1250px;
+    transform: rotate(-10deg);
+}

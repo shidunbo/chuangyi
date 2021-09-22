@@ -1,0 +1,126 @@
+@font-face {
+    font-family: history-font;
+    src: url("../css/font/rs.ttf");
+}
+#history-body{
+    background: linear-gradient(to top right,rgba(59, 59, 59,0.9),rgba(197,197,197,0.1)),
+    url("../images/metting2.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#history-narr{
+    font-family: history-font;
+    font-size: 20px;
+    -webkit-writing-mode:vertical-rl;
+    writing-mode: vertical-rl;
+    position: absolute;
+    height: 650px;
+    width: 100px;
+    margin-top: 30px;
+    cursor: default;
+}
+.history-content-body{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.history-content-cart:not(:first-child){
+    margin-top: 30px;
+}
+.time-axis{
+    position: relative;
+    width: 10px;
+    min-height: 60vh;
+    background-color: rgb(203,50,50);
+    border-radius: 0;
+}
+.time-axis > .history-content-layout{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+}
+.time-axis > .history-content-layout > span{
+    position: absolute;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    bottom: -18px;
+    left: 650px;
+}
+.history-content-cart{
+    width: 350px;
+    height: 370px;
+    text-align: right;
+    box-shadow: 0 0 5px 1px rgb(99, 99, 99);
+    background-color: white;
+    margin-left: 230px;
+    position: relative;
+}
+.history-content-cart::after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -30px;
+    right:150px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: rgb(203,50,50) transparent transparent;
+}
+.history-content-cart > div:first-child > img{
+    width: 350px;
+    height: 233.06px;
+    transition: all 1s;
+}
+.history-content-cart > div:first-child{
+    width: 350px;
+    height: 233.06px;
+    overflow: hidden;
+}
+.history-content-cart > div:first-child > img:hover{
+    transform: scale(1.2);
+}
+.history-content-cart > div:last-child{
+    width: 300px;
+    height: 90px;
+    text-align: left;
+    margin: 20px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    cursor: default;
+}
+.history-content-cart > div:last-child > a:hover{
+    color: rgb(203,50,50);
+}
+.time-pointe{
+    position: absolute;
+    left:-5px;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    border: solid 5px rgb(203,50,50);
+    top: 430px;
+    position: relative;
+    z-index: 10000;
+}
+.line-time{
+    height: 10px;
+    width:1200px;
+    background-color: rgb(203,50,50);
+    position: absolute;
+    top: 0;
+    border-radius: 0;
+    left: 12px;
+}
+.time-pointe > span{
+    position: absolute;
+    top: -25px;
+    left: 150px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}

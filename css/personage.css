@@ -1,0 +1,63 @@
+@font-face{
+    font-family: email-font;
+    src: url("../css/font/rs.ttf");
+}
+body{
+    background: linear-gradient(to top right, rgba(118,98,73,0.9),rgba(152,126,79,0.1)),
+    url("../images/personage-bg.jpg") no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+#personage-narr{
+    font-family: email-font;
+    font-size: 20px;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    position: absolute;
+    margin: 30px 0 0 0;
+    width: 100px;
+    height: 450px;
+    cursor: default;
+}
+.personage-content-body{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 40px 80px;
+    margin-bottom: 40px;
+}
+.personage-content-cart{
+    width: 350px;
+    height: 540px;
+    box-shadow: 0 0 5px 1px rgb(99,99,99);
+    background-color: white;
+}
+.personage-content-cart > div:last-child{
+    height: 140px;
+    overflow: hidden;
+    -webkit-line-clamp: 6;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    cursor: pointer;
+    margin: 20px;
+}
+.personage-content-cart > div:last-child:hover,
+.personage-content-cart > div:last-child > a:hover{
+    color: rgb(203,50,50);
+}
+.personage-content-cart > div:last-child > span{
+    font-size: 20px;
+    cursor: default;
+}
+.personage-content-cart > div:first-child{
+    width: 350px;
+    height: 361px;
+    overflow: hidden;
+}
+.personage-content-cart > div:first-child > img{
+    width: 350px;
+    height: 361px;
+    transition: all 1s;
+}
+.personage-content-cart > div:first-child > img:hover{
+    transform: scale(1.2);
+}

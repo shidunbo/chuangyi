@@ -1,0 +1,22 @@
+body{
+    background: linear-gradient(to top right,rgba(59, 59, 59,0.9),rgba(197,197,197,0.1));
+}
+.theory-content-body{
+    box-shadow: 0 0 5px 1px rgb(99, 99, 99);
+    background-color: white;
+    padding: 20px 30px;
+    margin-bottom: 40px;
+}
+.theory-content-body > h1{
+    text-align: center;
+}
+.theory-content-body > span{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.theory-content-body > div{
+    text-indent: 2em;
+    font-size: 18px;
+    margin: 10px;
+}
